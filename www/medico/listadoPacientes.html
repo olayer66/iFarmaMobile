@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>iFarma</title>
+    <link rel="shortcut icon" href="static/img/favicon.ico">
+    <link rel="icon" type="image/png" href="static/img/favicon.png">
+    <!-- Bootstrap Core CSS -->
+    <link href="/static/css/bootstrap.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="/static/css/3-col-portfolio.css" rel="stylesheet">
+    <!-- Include Bootstrap Datepicker -->
+    <link href="/static/css/datepicker.css" rel="stylesheet">
+    <link href="/static/css/datatables.css" rel="stylesheet">
+</head>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            
+             
+<!-- Brand  and toggle get grouped for better mobile display -->
+
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/paciente/tratamiento"><img src="/static/img/logo1.png" alt="Inicio"></a>
+            </div>
+
+<!-- Collect the nav links, forms, and other content for toggling -->
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/paciente/tratamiento">Tratamiento</a>
+                    </li>
+                    <li>
+                        <a href="/paciente/pedidosPc">Pedidos</a>
+                    </li>
+                    <li>
+                        <a href="/paciente/feedbackDR">Feedback DR</a>
+                    </li>
+                    <li>
+                        <a href="/paciente/perfil">Mi Perfil</a>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+	                    	usuario
+	                    	<span class="caret"></span>
+                   		 </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Configuración</a></li>
+                            <li><a href="#">Editar perfil</a></li>
+                            <li><a href="/logout">Cerrar sesión</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<div class="container">
+	<h2>Listado de Pacientes</h2>
+	<hr>
+
+	<table class="table table-hover">
+		<thead>
+			<tr>
+				<th>Nombre</th>
+				<th>Apellidos</th>
+				<th>Edad</th>
+				<th>Peso</th>
+				<th>Altura</th>
+				<th>Medicamentos</th>
+				<th>Acciones</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Placido</td>
+				<td>Olego Da Silva</td>
+				<td>27</td>
+				<td>74</td>
+				<td>1,76</td>
+				<td><span class="badge">0</span></td>
+				<td>
+					<a href="/medico/detalle-paciente" class="btn btn-sm btn-success">Ver Paciente</a>
+					<a href="#" class="btn btn-sm btn-danger" onclick="$(this).parent().parent().remove()">Eliminar</a>
+				</td>
+			</tr>
+			<tr>
+				<td>Juan Pedro</td>
+				<td>Torrado Muñoz</td>
+				<td>36</td>
+				<td>87</td>
+				<td>1,83</td>
+				<td><span class="badge">0</span></td>
+				<td>
+					<a href="/medico/detalle-paciente" class="btn btn-sm btn-success">Ver Paciente</a>
+					<a href="#" class="btn btn-sm btn-danger" onclick="$(this).parent().parent().remove()">Eliminar</a>
+				</td>
+			</tr>
+			<tr>
+				<td>Maria Clara</td>
+				<td>Nadal Gome-Perez</td>
+				<td>62</td>
+				<td>65</td>
+				<td>1,57</td>
+				<td><span class="badge">0</span></td>
+				<td>
+					<a href="/medico/detalle-paciente" class="btn btn-sm btn-success">Ver Paciente</a>
+					<a href="#" class="btn btn-sm btn-danger" onclick="$(this).parent().parent().remove()">Eliminar</a>
+				</td>
+			</tr>
+			<tr>
+				<td>Tomás</td>
+				<td>Serrano Hernandez</td>
+				<td>72</td>
+				<td>61</td>
+				<td>1,69</td>
+				<td><span class="badge">0</span></td>
+				<td>
+					<a href="/medico/detalle-paciente" class="btn btn-sm btn-success">Ver Paciente</a>
+					<a href="#" class="btn btn-sm btn-danger" onclick="$(this).parent().parent().remove()">Eliminar</a>
+				</td>
+			</tr>
+			<tr>
+				<td>Maruja</td>
+				<td>Gomez Blanco</td>
+				<td>58</td>
+				<td>82</td>
+				<td>1,65</td>
+				<td><span class="badge">0</span></td>
+				<td>
+					<a href="/medico/detalle-paciente" class="btn btn-sm btn-success">Ver Paciente</a>
+					<a href="#" class="btn btn-sm btn-danger" onclick="$(this).parent().parent().remove()">Eliminar</a>
+				</td>
+			</tr>
+			<tr>
+				<td>Gerrado</td>
+				<td>Torrico Delgado</td>
+				<td>37</td>
+				<td>62</td>
+				<td>1,70</td>
+				<td><span class="badge">0</span></td>
+				<td>
+					<a href="/medico/detalle-paciente" class="btn btn-sm btn-success">Ver Paciente</a>
+					<a href="#" class="btn btn-sm btn-danger" onclick="$(this).parent().parent().remove()">Eliminar</a>
+				</td>
+			</tr>
+			<tr>
+				<td>Julia</td>
+				<td>León Pérez</td>
+				<td>36</td>
+				<td>58</td>
+				<td>1,68</td>
+				<td><span class="badge">0</span></td>
+				<td>
+					<a href="/medico/detalle-paciente" class="btn btn-sm btn-success">Ver Paciente</a>
+					<a href="#" class="btn btn-sm btn-danger" onclick="$(this).parent().parent().remove()">Eliminar</a>
+				</td>
+			</tr>
+			<tr>
+				<td>Placido</td>
+				<td>Olego Da Silva</td>
+				<td>27</td>
+				<td>74</td>
+				<td>1,76</td>
+				<td><span class="badge">0</span></td>
+				<td>
+					<a href="/medico/detalle-paciente" class="btn btn-sm btn-success">Ver Paciente</a>
+					<a href="#" class="btn btn-sm btn-danger" onclick="$(this).parent().parent().remove()">Eliminar</a>
+				</td>
+			</tr>
+			<tr>
+				<td>Juan Pedro</td>
+				<td>Torrado Muñoz</td>
+				<td>36</td>
+				<td>87</td>
+				<td>1,83</td>
+				<td><span class="badge">0</span></td>
+				<td>
+					<a href="/medico/detalle-paciente" class="btn btn-sm btn-success">Ver Paciente</a>
+					<a href="#" class="btn btn-sm btn-danger" onclick="$(this).parent().parent().remove()">Eliminar</a>
+				</td>
+			</tr>
+			<tr>
+				<td>Maria Clara</td>
+				<td>Nadal Gome-Perez</td>
+				<td>62</td>
+				<td>65</td>
+				<td>1,57</td>
+				<td><span class="badge">0</span></td>
+				<td>
+					<a href="/medico/detalle-paciente" class="btn btn-sm btn-success">Ver Paciente</a>
+					<a href="#" class="btn btn-sm btn-danger" onclick="$(this).parent().parent().remove()">Eliminar</a>
+				</td>
+			</tr>
+			<tr>
+				<td>Tomás</td>
+				<td>Serrano Hernandez</td>
+				<td>72</td>
+				<td>61</td>
+				<td>1,69</td>
+				<td><span class="badge">0</span></td>
+				<td>
+					<a href="/medico/detalle-paciente" class="btn btn-sm btn-success">Ver Paciente</a>
+					<a href="#" class="btn btn-sm btn-danger" onclick="$(this).parent().parent().remove()">Eliminar</a>
+				</td>
+			</tr>
+			<tr>
+				<td>Maruja</td>
+				<td>Gomez Blanco</td>
+				<td>58</td>
+				<td>82</td>
+				<td>1,65</td>
+				<td><span class="badge">0</span></td>
+				<td>
+					<a href="/medico/detalle-paciente" class="btn btn-sm btn-success">Ver Paciente</a>
+					<a href="#" class="btn btn-sm btn-danger" onclick="$(this).parent().parent().remove()">Eliminar</a>
+				</td>
+			</tr>
+			<tr>
+				<td>Gerrado</td>
+				<td>Torrico Delgado</td>
+				<td>37</td>
+				<td>62</td>
+				<td>1,70</td>
+				<td><span class="badge">0</span></td>
+				<td>
+					<a href="/medico/detalle-paciente" class="btn btn-sm btn-success">Ver Paciente</a>
+					<a href="#" class="btn btn-sm btn-danger" onclick="$(this).parent().parent().remove()">Eliminar</a>
+				</td>
+			</tr>
+			<tr>
+				<td>Julia</td>
+				<td>León Pérez</td>
+				<td>36</td>
+				<td>58</td>
+				<td>1,68</td>
+				<td><span class="badge">0</span></td>
+				<td>
+					<a href="/medico/detalle-paciente" class="btn btn-sm btn-success">Ver Paciente</a>
+					<a href="#" class="btn btn-sm btn-danger" onclick="$(this).parent().parent().remove()">Eliminar</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div class="container">
+	<hr>
+	
+	<footer>
+	    <div class="row">
+	        <div class="col-lg-12">
+	            <p>
+	            	Copyright &copy; iFarma IW 2017
+	            	&nbsp;  &nbsp; <a href="#">Aviso legal</a>
+	            </p>
+	        </div>
+	    </div>
+	</footer>
+</div>
+<!-- jQuery -->
+<script src="/static/js/jquery.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="/static/js/bootstrap.js"></script>
+<!--datepicker-->
+<script src="/static/js/datepicker.js"></script>
+<!--datatables-->
+<script src="/static/js/datatables.js"></script>
+<!-- js propio -->
+<script src="/static/js/main.js"></script>
+</body>
+</html>
